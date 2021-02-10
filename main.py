@@ -20,6 +20,7 @@ class MyWidget(QMainWindow, Ui_MainWindow):
             "spn": ",".join([delta, delta]),
             "l": "map"
         }
+
         map_request = api_server + params['ll'] + params['spn'] + params['l']
         response = requests.get(api_server, params=params)
 
